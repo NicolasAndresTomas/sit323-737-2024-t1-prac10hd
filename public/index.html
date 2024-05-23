@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DÍADOS</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="fade-in-1">
+            <img src="images/logo.png" alt="Logo Image">
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="fade-in-2">
+            <h2>SUBSCRIBE TO GET IN EARLY:</h2>
+        </div>
+        <form id="subscribe-form">
+            <div class="row">
+                <div class="column">
+                    <div class="fade-in-3">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <span id="msg"></span>
+        <div class="social-media">
+            <div class="fade-in-4">
+                <a href="https://www.instagram.com/diadosofficial?igsh=cmI4c2F3dWh2enMz&utm_source=qr"><img src="images/instagram.png" alt="Instagram Logo" style="width: 25px;"></a>
+                <a href="https://open.spotify.com/user/31mo53ne2xu54au6uumfkillp63q?si=8a324ecef69b41d1"><img src="images/spotify.png" alt="Spotify Logo" style="width: 25px;"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const msg = document.getElementById('msg');
+
+            fetch('/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: formData.get('email')
+                })
+            })
+            .then(response => response.text())
+            .then(result => {
+                msg.innerHTML = "ALL SET, WE'LL KEEP YOU POSTED";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 10000);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('ERROR!', error.message);
+                msg.innerHTML = "OOPS SOMETHING WENT WRONG";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 10000);
+            });
+        });
+    </script>
+</body>
+</html>

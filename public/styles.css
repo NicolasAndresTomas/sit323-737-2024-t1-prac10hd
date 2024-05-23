@@ -1,0 +1,361 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/wallpaper3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0.01%;
+    background-color: black;
+    height: 100vh;
+    font-family: Courier New;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 600px; /* set the maximum width of the container */
+    margin: 0 auto;
+}
+
+.container-1 img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%; /* set the width to 100% */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-2 h2 {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.container-2 span{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 11.5px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Add display:flex and justify-content:center to parent container */
+.container-1, .container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%; /* set the width to 100% */
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr; /* change the grid template to one column */
+}
+
+textarea,
+input {
+    font-weight: 400;
+    padding: 14px 16px;
+    border: none;
+    font-size: 1rem;
+    font-family: Courier New;
+    width: 65%; /* The input elements will take up the full width of the form */
+    box-sizing: border-box; /* Ensure that padding is included in the width calculation */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    border: none;
+    padding: 14px 0px;
+    background: #212121;
+    color: #ffffff;
+    margin-left: -10px;
+    width: 35%;
+    font-weight: bold;
+    font-family: Courier New;
+}
+
+button:focus {
+    background: #161616;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    margin: 0 15px; /* Add some spacing between the logos */
+   filter: brightness(27%);
+}
+.social-media img:hover {
+
+   filter: brightness(100%);
+}
+
+.fade-in-1 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-1 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-1 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-2 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-2 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-2 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-3 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-3 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-3 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-4 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-4 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-4 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/wallpaper3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0.01%;
+    background-color: black;
+    height: 100vh;
+    font-family: Courier New;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 600px; /* set the maximum width of the container */
+    margin: 0 auto;
+}
+
+.container-1 img {
+    width: 400px;
+    margin-bottom: 25px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* set the width to 100% */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-2 h2 {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.container-2 span{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 11.5px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Add display:flex and justify-content:center to parent container */
+.container-1, .container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%; /* set the width to 100% */
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr; /* change the grid template to one column */
+}
+
+textarea,
+input {
+    font-weight: 400;
+    padding: 14px 16px;
+    border: none;
+    font-size: 1rem;
+    font-family: Courier New;
+    width: 65%; /* The input elements will take up the full width of the form */
+    box-sizing: border-box; /* Ensure that padding is included in the width calculation */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    border: none;
+    padding: 14px 0px;
+    background: #212121;
+    color: #ffffff;
+    margin-left: -10px;
+    width: 35%;
+    font-weight: bold;
+    font-family: Courier New;
+}
+
+button:focus {
+    background: #161616;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    margin: 0 15px; /* Add some spacing between the logos */
+   filter: brightness(27%);
+}
+.social-media img:hover {
+
+   filter: brightness(100%);
+}
+
+.fade-in-1 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-1 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-1 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-2 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-2 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-2 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-3 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-3 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-3 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+
+.fade-in-4 {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fade-in-4 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in-4 {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with 100% opacity */
+  }
+}
+}

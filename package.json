@@ -1,0 +1,20 @@
+{
+  "name": "sit323-737-2024-t1-prac10hd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.19.2",
+    "mongoose": "^5.13.3",
+    "node-fetch": "^3.3.2"
+  }
+}
